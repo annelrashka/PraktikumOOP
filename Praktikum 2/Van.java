@@ -15,11 +15,8 @@ public class Van extends Car{
         else if (vanMil > 1000 && vanMil <= 10000){
             return (long) (Math.floor(this.basePrice*(0.75)));
         }
-        else if( vanMil > 10000) {
-            return (long) Math.floor(this.basePrice/2);
-        }
         else{
-            return vanMil;
+            return (long) Math.floor(this.basePrice/2);
         }
     }
 }
