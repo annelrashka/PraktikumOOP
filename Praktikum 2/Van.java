@@ -6,17 +6,13 @@ public class Van extends Car{
     }
 
     @Override
-    public long getPrice() {
-        long vanMil = this.getMileage();
-
-        if (vanMil >= 0 && vanMil <= 1000){
+    public long getPrice(){
+        if ((this.getMileage() >= 0) & (this.getMileage() <= 1000)){
             return this.basePrice;
-        }
-        else if (vanMil > 1000 && vanMil <= 10000){
-            return (long) (Math.floor(this.basePrice*(0.75)));
-        }
-        else{
-            return (long) Math.floor(this.basePrice/2);
+        }else if(((this.getMileage() > 1000) & (this.getMileage() <= 10000))){
+            return (long)Math.floor(this.basePrice*0.75);
+        }else{
+            return (long)Math.floor(this.basePrice/2.0);
         }
     }
 }

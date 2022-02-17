@@ -18,9 +18,9 @@ public class Truck extends Car {
         this.loaded = false;
     }
 
-
+    @Override
     public String toString() {
-        return String.format("Number of Wheels: %1$d, Mileage: %2$d, Is Loaded: %3$d", this.getNumberOfWheels(), this.getMileage(), this.isLoaded());
+        return String.format("Number of Wheels: %1$d, Mileage: %2$d, Is Loaded: %3$b", this.getNumberOfWheels(), this.getMileage(), this.isLoaded());
     }
 
     @Override

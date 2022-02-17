@@ -10,6 +10,7 @@ public class Bus extends Car{
         return this.maxCapacity;
     }
 
+    @Override
     public String toString() {
         return String.format("Number of Wheels: %1$d, Mileage: %2$d, Max Capacity: %3$d", this.getNumberOfWheels(), this.getMileage(), this.maxCapacity);
     }

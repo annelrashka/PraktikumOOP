@@ -31,10 +31,9 @@ public abstract class Car {
 
     public String toString() {
         // Mengembalikan informasi mobil dengan format: "Number of Wheels: {numberOfWheels}, Mileage: {mileage}"
-        String now = String.format("Number of Wheels: %1$d, Mileage: %2$d", this.numberOfWheels, this.mileage);
 
 
-        return now;
+        return String.format("Number of Wheels: %1$d, Mileage: %2$d", this.numberOfWheels, this.mileage);
     }
 
     public abstract long getPrice();
